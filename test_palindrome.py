@@ -1,19 +1,19 @@
-from palindrom import palindrom
+from palindrome import palindrome
 from count_palindromes import count_palindromes
 
 def test_single_word_palindrome():
-    assert palindrom("racecar") is True
-    assert palindrom("madam") is True
-    assert palindrom("level") is True
-    assert palindrom("hello") is False
-    assert palindrom("world") is False
+    assert palindrome("racecar") is True
+    assert palindrome("madam") is True
+    assert palindrome("level") is True
+    assert palindrome("hello") is False
+    assert palindrome("world") is False
 
 def test_case_insensitivity():
-    assert palindrom("Racecar") is True
-    assert palindrom("MadAm") is True
+    assert palindrome("Racecar") is True
+    assert palindrome("MadAm") is True
 
 def test_empty_string():
-    assert palindrom("") is True
+    assert palindrome("") is True
 
 def test_count_palindromes():
     assert count_palindromes("madam racecar level") == 3
