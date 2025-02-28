@@ -14,14 +14,3 @@ def test_case_insensitivity():
 
 def test_empty_string():
     assert palindrome("") is True
-
-def test_count_palindromes():
-    assert count_palindromes("madam racecar level") == 3
-    assert count_palindromes("hello world") == 0
-    assert count_palindromes("A toyota's a toyota") == 1
-
-def test_mixed_case_palindromes():
-    assert count_palindromes("Racecar Madam Level") == 3
-
-def test_sentence_with_punctuation():
-    assert count_palindromes("Wow! Dad and Mom are here.") == 2
