@@ -1,5 +1,4 @@
 from palindrome import palindrome
-from count_palindromes import count_palindromes
 
 def test_single_word_palindrome():
     assert palindrome("racecar") is True
