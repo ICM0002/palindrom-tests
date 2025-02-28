@@ -1,4 +1,3 @@
-import pytest # noqa
 from palindrom import palindrom
 from count_palindromes import count_palindromes
 
